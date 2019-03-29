@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <Button
+        android:id="@+id/main_start_serviceId"
+        android:layout_width="215dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="148dp"
+        android:layout_marginEnd="8dp"
+        android:text="Start Service"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/main_stop_serviceId"
+        android:layout_width="208dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="40dp"
+        android:text="Stop Service"
+        app:layout_constraintEnd_toEndOf="@+id/main_start_serviceId"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintStart_toStartOf="@+id/main_start_serviceId"
+        app:layout_constraintTop_toBottomOf="@+id/main_start_serviceId" />
+
+    <TextView
+        android:id="@+id/main_randum_numId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="8dp"
+        android:text="0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/main_bind_service_btnId"
+        android:layout_width="211dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="52dp"
+        android:text="Bind Service"
+        app:layout_constraintEnd_toEndOf="@+id/main_stop_serviceId"
+        app:layout_constraintStart_toStartOf="@+id/main_stop_serviceId"
+        app:layout_constraintTop_toBottomOf="@+id/main_stop_serviceId" />
+
+    <Button
+        android:id="@+id/main_unbind_btnId"
+        android:layout_width="208dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="40dp"
+        android:text="UnBind Service"
+        app:layout_constraintEnd_toEndOf="@+id/main_bind_service_btnId"
+        app:layout_constraintStart_toStartOf="@+id/main_bind_service_btnId"
+        app:layout_constraintTop_toBottomOf="@+id/main_bind_service_btnId" />
+
+    <Button
+        android:id="@+id/main_getNum_BtnId"
+        android:layout_width="194dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="56dp"
+        android:text="Get Randum Number"
+        app:layout_constraintEnd_toEndOf="@+id/main_unbind_btnId"
+        app:layout_constraintStart_toStartOf="@+id/main_unbind_btnId"
+        app:layout_constraintTop_toBottomOf="@+id/main_unbind_btnId" />
+</android.support.constraint.ConstraintLayout>

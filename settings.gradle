@@ -1,0 +1,1 @@
+include ':app', ':boundservicedemo', ':remotebinding_app1', ':remotebinding_app2', ':intentservicedemo'
